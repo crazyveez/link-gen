@@ -37,7 +37,6 @@ def TitleHunter(class_block, file_to_write):
 			print("Members only or Ad block detected")
 			pass
 		else:
-			#print("hi")
 			subcomic_link = main_link + class_block["href"]
 			#print(subcomic_link)
 			
@@ -48,7 +47,6 @@ def TitleHunter(class_block, file_to_write):
 				file_to_write.write(main_link + class_block["href"] + "\n")
 				file_to_write.flush()
 			else:
-				#print("Am getting in for loop")
 				for subcomic in range(0, len(subcomic_list)):
 					TitleHunter(subcomic_list[subcomic], file_to_write)
 
@@ -60,14 +58,8 @@ def TitleHunter(class_block, file_to_write):
 			# https://stackoverflow.com/questions/479343/how-can-i-build-a-recursive-function-in-python
 	except Exception as e:
 		#print("Invalid comic block detected! Ignoring it...")
-		print("ERROR! : " + str(e))
+		#print("ERROR! : " + str(e))
 		pass
-
-
-		
-		#print(class_block)
-
-
 
 
 if __name__ == '__main__':
