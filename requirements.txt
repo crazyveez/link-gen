@@ -1,5 +1,5 @@
 requests
 bs4
-urllib
+urllib3
 os
 interruptingcow
