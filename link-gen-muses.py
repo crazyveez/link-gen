@@ -68,7 +68,7 @@ if __name__ == '__main__':
 	    version = "Mozilla/5.0"
 
 	parser = argparse.ArgumentParser()
-	parser.add_argument("--link", help="Link of 8muses main page", default="https://www.8muses.com/comix?page=2")
+	parser.add_argument("--link", help="Link of 8muses main page", default="https://www.8muses.com")
 	parser.add_argument("--directory", help="Enter the directory name you want to save in", default="8muses")
 	parser.add_argument("--filename", help="Enter the name of file to save the links", default="8muses_links.txt")
 	args = parser.parse_args()
