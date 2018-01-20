@@ -18,3 +18,6 @@ https://github.com/jaymoulin/yamete
 You may look at the available options for this script by:
 
 `$ ./link-gen-muses.py --help`
+
+## Scope of this project
+Making a generic script for fetching the episode links from yamete supported comic sites.
